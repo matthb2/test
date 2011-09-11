@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+extern "C" void fortranFunctionToSquareANumber(double);
+
 int main(int argc, char** argv)
 {
 	printf("Hello World!\n");
@@ -8,5 +10,6 @@ int main(int argc, char** argv)
             printf("argv[%d]: %s\n", i, argv[i]);
           }
         }
+        fortranFunctionToSquareANumber(42.0);
 	return(0);
 }
